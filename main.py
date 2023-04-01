@@ -2,7 +2,7 @@
 Bunch of functions
 """
 
-def add(number_a:int, number_b:int):
+def add(number_a,number_b):
     """
     This function adds 2 numbers
     """
