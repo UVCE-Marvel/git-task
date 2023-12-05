@@ -3,7 +3,7 @@
 Bunch of functions
 inverse trig
 logarithmic 
-algebriac
+algebraic
 trignometric
 exponential
 """
