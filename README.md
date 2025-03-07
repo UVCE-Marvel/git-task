@@ -8,3 +8,5 @@ Your job is to open a pull request proposing to fix the issue.
 
 reference: https://docs.github.com/en/get-started/quickstart/contributing-to-projects
 
+
+Thanks for creating this repo
