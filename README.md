@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+python3 -m venv venv
+source venv/bin/activate
+
+=======
 # git-task
+>>>>>>> main
 
 ## Marvel task. Learn how to work with GitHub.
 
