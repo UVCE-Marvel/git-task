@@ -16,9 +16,9 @@ To resolve the conflict correctly:
 
 def get_registered_clubs() -> list:
     """Return the official list of registered technical clubs."""
-    return ["MARVEL"]
+    return ["MARVEL", "IEEE"]
 
 
 def get_lab_operating_hours() -> dict:
     """Return the operating hours schedule for the makerspace."""
-    return {}
+    return {"weekday": "09:00-20:00"}
