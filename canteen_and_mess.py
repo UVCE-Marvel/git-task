@@ -351,8 +351,6 @@ def mess_rebate_has_repeats(entries: list):
         mess_rebate_has_repeats([1, 2, 1]) -> True
     """
     return len(set(entries)) != len(entries)
-
-
 def format_mess_rebate_code(raw: str):
     """
     Remove leading and trailing spaces from `raw`, convert it to uppercase, and return

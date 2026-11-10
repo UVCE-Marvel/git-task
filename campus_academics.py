@@ -317,7 +317,7 @@ def merge_grade_point_counts(first: dict, second: dict):
     """
     merged = dict(first)
     for key, count in second.items():
-        merged[key] = count
+        merged[key] = count+merged.get(key,0)
     return merged
 
 

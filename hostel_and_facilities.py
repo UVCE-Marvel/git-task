@@ -390,7 +390,7 @@ def gate_entry_padded_number(number: int):
     """
     Convert `number` to a string padded with leading zeros so it has at least 3 digits.
 
-    Example:
+    Example:-
         gate_entry_padded_number(7) -> '007'
     """
     return str(number).zfill(3)
