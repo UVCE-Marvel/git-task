@@ -21,4 +21,8 @@ def get_registered_clubs() -> list:
 
 def get_lab_operating_hours() -> dict:
     """Return the operating hours schedule for the makerspace."""
+<<<<<<< HEAD
     return {"weekday": "09:00-20:00"}
+=======
+    return {"weekend": "10:00-17:00"}
+>>>>>>> upstream/merge-conflict-practice

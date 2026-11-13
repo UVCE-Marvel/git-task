@@ -339,9 +339,9 @@ def has_passed_solder_temp_check(score: int):
     otherwise return False.
 
     Example:
-        has_passed_solder_temp_check(59) -> True
+        has_passed_solder_temp_check(59) ->= True
     """
-    return score > 59
+    return score >= 59
 
 
 def frequency_of_solder_temp(items: list):
