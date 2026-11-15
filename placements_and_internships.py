@@ -173,7 +173,7 @@ def aptitude_countdown_list(start: int):
     """
     if start <= 0:
         return []
-    return list(range(start, 1, -1))
+    return list(range(start, 0, -1))
 
 
 def extract_aptitude_number(tag: str):
