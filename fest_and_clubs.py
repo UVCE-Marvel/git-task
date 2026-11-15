@@ -192,7 +192,7 @@ def coding_contest_late_penalty(days_late: int):
     extra_days = days_late - 3
     if extra_days <= 0:
         return 0
-    return max(extra_days * 8, 48)
+    return min(extra_days * 8, 48)
 
 
 def coding_contest_completion_percent(done: int, total: int):

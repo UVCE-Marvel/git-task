@@ -199,9 +199,9 @@ def lookup_internal_marks_value(table: dict, key: str):
     Example:
         lookup_internal_marks_value({'a': 0, 'b': 5}, 'a') -> 0
     """
-    value = table.get(key)
-    return value if value else 101
-
+    if key in table:
+        return table[key]
+    return 101
 
 def internal_marks_only_in_first(first: list, second: list):
     """
