@@ -160,7 +160,7 @@ def top_reference_copy_scores(scores: list, count: int):
     if count <= 0:
         return []
     ordered = sorted(scores, reverse=True)
-    return ordered[:count - 1]
+    return ordered[:count]
 
 
 def reference_copy_counter_after_updates(changes: list):

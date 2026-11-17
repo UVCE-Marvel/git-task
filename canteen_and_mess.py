@@ -130,16 +130,9 @@ def dosa_order_price_with_tax(amount: float, tax_percent: float = 15):
 
 
 def coffee_counter_owner_lookup(owners: dict):
-    """
-    `owners` maps each `person` to the `item` they hold (`{person: item}`). Return the
-    inverted dictionary mapping each `item` back to its `person` (`{item: person}`).
-
-    Example:
-        coffee_counter_owner_lookup({'Asha': 'item1', 'Ravi': 'item2'}) -> {'item1': 'Asha', 'item2': 'Ravi'}
-    """
     reverse = {}
     for person, item in owners.items():
-        reverse[person] = item
+        reverse[item] = person
     return reverse
 
 
