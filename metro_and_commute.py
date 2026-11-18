@@ -353,7 +353,7 @@ def bus_pass_share_per_member(first: float, second: float, members: int):
     """
     if members == 0:
         return 0.0
-    return round(first + second / members, 2)
+    return round((first + second) / members, 2)
 
 
 def numbered_bus_pass_labels(names: list):
