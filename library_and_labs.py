@@ -210,7 +210,7 @@ def reference_copy_running_totals(amounts: list):
     totals = []
     running = 0
     for amount in amounts:
-        running = amount
+        running += amount
         totals.append(running)
     return totals
 

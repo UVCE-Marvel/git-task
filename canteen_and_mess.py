@@ -177,7 +177,7 @@ def either_not_both_coffee_counter(group_a: list, group_b: list):
     Example:
         either_not_both_coffee_counter(['a', 'b'], ['b', 'c']) -> ['a', 'c']
     """
-    return sorted(set(group_a) & set(group_b))
+    return sorted(set(group_a) ^ set(group_b))
 
 
 def scaled_coffee_counter_values(values: list):
