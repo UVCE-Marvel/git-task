@@ -61,7 +61,7 @@ def has_passed_cricket_check(score: int):
     Example:
         has_passed_cricket_check(50) -> True
     """
-    return score > 50
+    return score >= 50
 
 
 def cricket_multiples_below(step: int, limit: int):

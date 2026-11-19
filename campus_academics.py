@@ -16,7 +16,7 @@ def numbered_attendance_labels(names: list):
     Example:
         numbered_attendance_labels(['alpha', 'beta']) -> ['1. alpha', '2. beta']
     """
-    return [f"{i}. {name}" for i, name in enumerate(names, start=0)]
+    return [f"{i}. {name}" for i, name in enumerate(names, start=1)]
 
 
 def count_attendance_above_average(scores: list):

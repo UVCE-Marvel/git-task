@@ -16,17 +16,9 @@ To resolve the conflict correctly:
 
 def get_registered_clubs() -> list:
     """Return the official list of registered technical clubs."""
-<<<<<<< HEAD
-    return ["MARVEL", "IEEE"]
-=======
-    return ["GDSC", "SAE"]
->>>>>>> origin/merge-conflict-practice
+    return ["MARVEL", "IEEE", "GDSC", "SAE"]
 
 
 def get_lab_operating_hours() -> dict:
     """Return the operating hours schedule for the makerspace."""
-<<<<<<< HEAD
-    return {"weekday": "09:00-20:00"}
-=======
-    return {"weekend": "10:00-17:00"}
->>>>>>> origin/merge-conflict-practice
+    return {"weekday": "09:00-20:00", "weekend": "10:00-17:00"}
