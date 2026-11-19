@@ -257,7 +257,7 @@ def count_duplicate_metro_trip(items: list):
     Example:
         count_duplicate_metro_trip(['x', 'y']) -> 0
     """
-    return len(set(items))
+    return len(items) - len(set(items))
 
 
 # ---------------------------------------------------------------------------

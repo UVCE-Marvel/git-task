@@ -245,7 +245,7 @@ def longest_aptitude_streak(values: list):
     each number is at least 74.
 
     Example:
-        longest_aptitude_streak([74, 69, 74, 74]) -> 2
+        longest_aptitude_streak([74, 74, 69, 74]) -> 2
     """
     best = 0
     current = 0
@@ -253,6 +253,8 @@ def longest_aptitude_streak(values: list):
         if value >= 74:
             current += 1
             best = max(best, current)
+        else:
+            current = 0 
 
     return best
 

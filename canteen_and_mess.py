@@ -139,7 +139,7 @@ def coffee_counter_owner_lookup(owners: dict):
     """
     reverse = {}
     for person, item in owners.items():
-        reverse[person] = item
+        reverse[item] = person
     return reverse
 
 
