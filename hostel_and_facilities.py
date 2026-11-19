@@ -307,7 +307,7 @@ def count_gate_entry_below_limit(values: list):
     """
     count = 0
     for value in values:
-        if value <= 76:
+        if value < 76:
             count += 1
     return count
 

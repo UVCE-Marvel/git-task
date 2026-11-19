@@ -344,7 +344,7 @@ def grade_point_booking_results(requests: list):
     results = []
     for slot in requests:
         if slot in booked:
-            results.append(True)
+            results.append(False)
         else:
             booked.add(slot)
             results.append(True)
