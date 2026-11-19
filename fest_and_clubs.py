@@ -101,7 +101,7 @@ def latest_paper_contest_reading(readings: list):
     """
     if not readings:
         return None
-    return readings[0]
+    return readings[-1]
 
 
 def format_paper_contest_code(raw: str):
