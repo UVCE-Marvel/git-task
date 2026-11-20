@@ -121,7 +121,7 @@ def drop_ends_of_cricket(items: list):
     """
     if len(items) < 3:
         return []
-    return items[1:]
+    return items[1:-1]
 
 
 # ---------------------------------------------------------------------------
