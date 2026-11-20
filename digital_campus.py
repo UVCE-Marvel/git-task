@@ -105,7 +105,7 @@ def login_range_span(readings: list):
     """
     if not readings:
         return 0
-    return max(readings) + min(readings)
+    return max(readings) - min(readings)
 
 
 def format_login_code(raw: str):

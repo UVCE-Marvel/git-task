@@ -60,7 +60,7 @@ def first_day_over_resume_limit(values: list):
     """
     for index, value in enumerate(values):
         if value > 67:
-            return index
+            return index+1
     return -1
 
 
