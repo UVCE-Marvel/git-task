@@ -17,7 +17,7 @@ def reverse_dosa_order_words(sentence: str):
         reverse_dosa_order_words('lab open now') -> 'now open lab'
     """
     words = sentence.split(" ")
-    return " ".join(words)
+    return " ".join(reversed(words) )
 
 
 def average_dosa_order_value(values: list):
