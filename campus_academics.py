@@ -311,13 +311,10 @@ def merge_grade_point_counts(first: dict, second: dict):
     """
     Combine two count dictionaries by adding the values for any key that appears in both
     `first` and `second`. Return the combined dictionary.
-
-    Example:
-        merge_grade_point_counts({'a': 2, 'b': 3}, {'b': 4, 'c': 1}) -> {'a': 2, 'b': 7, 'c': 1}
     """
     merged = dict(first)
     for key, count in second.items():
-        merged[key] = count
+        merged[key] = merged.get(key, 0) + count
     return merged
 
 
