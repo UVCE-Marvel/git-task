@@ -126,7 +126,7 @@ def any_filament_over_limit(values: list):
     return all(value > 45 for value in values)
 
 
-def filament_batches_needed(items: int):
+def filament_batches_needed(items):
     """
     Each batch holds at most 5 items. Return how many batches are needed to hold `items`
     items (0 items need 0 batches).
