@@ -98,7 +98,7 @@ def laundry_initials(full_name: str):
         laundry_initials('ravi kumar') -> 'R.K'
     """
     words = full_name.split()
-    return ".".join(word[0].lower() for word in words)
+    return ".".join(word[0].upper() for word in words)
 
 
 def laundry_names_sorted(table: dict):
