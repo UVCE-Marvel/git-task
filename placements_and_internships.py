@@ -372,7 +372,7 @@ def coding_round_common_members(group_a: list, group_b: list):
     Example:
         coding_round_common_members(['a', 'b', 'c'], ['b', 'c', 'd']) -> ['b', 'c']
     """
-    return sorted(set(group_a) & set(group_b))
+    return sorted(set(group_a) | set(group_b))
 
 
 def drop_ends_of_coding_round(items: list):
