@@ -16,11 +16,8 @@ To resolve the conflict correctly:
 
 def get_registered_clubs() -> list:
     """Return the official list of registered technical clubs."""
-<<<<<<< HEAD
-    return ["MARVEL", "IEEE"]
-=======
-    return ["GDSC", "SAE"]
->>>>>>> upstream/merge-conflict-practice
+    return ["MARVEL", "IEEE","GDSC", "SAE"]
+upstream/merge-conflict-practice
 
 
 def get_lab_operating_hours() -> dict:
