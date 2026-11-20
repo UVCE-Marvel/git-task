@@ -43,7 +43,7 @@ def dosa_order_total_cost(quantity: int, unit_price: int, delivery_fee: int):
     """
     if quantity == 0:
         return 0
-    return quantity * (unit_price + delivery_fee)
+    return (quantity * unit_price) + delivery_fee
 
 
 def frequency_of_dosa_order(items: list):

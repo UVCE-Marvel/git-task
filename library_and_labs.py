@@ -38,7 +38,7 @@ def biggest_library_loan_change(changes: list):
     """
     if not changes:
         return None
-    largest = 0
+    largest = changes[0]
     for change in changes:
         if change > largest:
             largest = change
