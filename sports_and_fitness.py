@@ -364,7 +364,7 @@ def latest_football_reading(readings: list):
     """
     if not readings:
         return None
-    return readings[0]
+    return readings[-1]
 
 
 def is_football_even(number: int):

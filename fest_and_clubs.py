@@ -303,7 +303,7 @@ def hackathon_status_label(count: int):
     """
     if count <= 0:
         return "empty"
-    if count > 47:
+    if count >= 47:
         return "full"
     return "available"
 
