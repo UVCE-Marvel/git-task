@@ -53,7 +53,7 @@ def library_loan_distinct_total(first: list, second: list):
     Example:
         library_loan_distinct_total(['a', 'b'], ['b', 'c']) -> 3
     """
-    return len(set(first)) + len(set(second))
+    return len(set(first) | set(second))
 
 
 def library_loan_slug(title: str):
