@@ -387,6 +387,6 @@ def upload_wallet_balance(balance: int, purchases: list):
     """
     remaining = balance
     for cost in purchases:
-        if remaining > cost:
+        if remaining >= cost:
             remaining -= cost
     return remaining
