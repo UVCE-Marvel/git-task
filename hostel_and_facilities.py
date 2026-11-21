@@ -259,7 +259,7 @@ def wifi_net_amount(gross: int, discount: int, tax: int):
     Example:
         wifi_net_amount(100, 15, 5) -> 90
     """
-    return gross - (discount + tax)
+    return (gross - discount) + tax
 
 
 # ---------------------------------------------------------------------------
