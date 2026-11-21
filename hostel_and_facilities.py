@@ -358,7 +358,7 @@ def all_required_gate_entry_present(required: list, available: list):
     Example:
         all_required_gate_entry_present(['a', 'b'], ['a', 'b', 'c']) -> True
     """
-    return set(available).issubset(set(required))
+    return set(required).issubset(set(available))
 
 
 def first_day_over_gate_entry_limit(values: list):
