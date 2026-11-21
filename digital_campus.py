@@ -232,7 +232,7 @@ def multiply_student_id_factors(factors: list):
     Example:
         multiply_student_id_factors([2, 3, 4]) -> 24
     """
-    product = 0
+    product = 1
     for factor in factors:
         product *= factor
     return product

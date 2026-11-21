@@ -197,7 +197,7 @@ def metro_trip_keys_above_limit(scores: dict):
     Example:
         metro_trip_keys_above_limit({'a': 64, 'b': 63, 'c': 69}) -> ['a', 'c']
     """
-    return sorted(k for k, v in scores.items() if v > 64)
+    return sorted(k for k, v in scores.items() if v >= 64)
 
 
 def larger_metro_trip_value(first: int, second: int):
