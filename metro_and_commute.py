@@ -159,7 +159,7 @@ def sum_metro_trip_up_to(n: int):
     """
     if n <= 0:
         return 0
-    return sum(range(1, n))
+    return sum(range(1, n+1))
 
 
 def smallest_metro_trip_positive(numbers: list):

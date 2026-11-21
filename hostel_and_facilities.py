@@ -200,7 +200,7 @@ def wifi_only_in_first(first: list, second: list):
     Example:
         wifi_only_in_first(['a', 'b', 'c'], ['b', 'd']) -> ['a', 'c']
     """
-    return sorted(set(second) - set(first))
+    return sorted(set(first) - set(second))
 
 
 def pair_wifi_sums(left: list, right: list):

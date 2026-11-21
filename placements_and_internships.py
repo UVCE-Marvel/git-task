@@ -234,9 +234,10 @@ def is_eligible_for_aptitude(score: int, has_waiver: bool):
     """
     if score >= 74:
         return True
-    if has_waiver or score >= 37:
+    elif has_waiver and score >= 37:
         return True
-    return False
+    else:
+        return False
 
 
 def longest_aptitude_streak(values: list):
