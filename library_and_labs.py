@@ -366,7 +366,7 @@ def journal_share_per_member(first: float, second: float, members: int):
     """
     if members == 0:
         return 0.0
-    return round(first + second / members, 2)
+    return round((first + second) / members, 2)
 
 
 def highest_journal_below_cap(values: list, cap: int):

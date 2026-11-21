@@ -334,7 +334,7 @@ def total_hackathon_by_member(records: list):
     """
     totals = {}
     for name, amount in records:
-        totals[name] = amount
+        totals[name] = totals.get(name, 0) + amount
     return totals
 
 
