@@ -108,7 +108,7 @@ def cricket_price_with_tax(amount: float, tax_percent: float = 9):
     Example:
         cricket_price_with_tax(100) -> 109.0
     """
-    return round(amount * (1 + tax_percent), 2)
+    return round(amount * (1 + tax_percent / 100), 2)
 
 
 def drop_ends_of_cricket(items: list):
