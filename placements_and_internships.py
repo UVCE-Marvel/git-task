@@ -362,7 +362,7 @@ def coding_round_total_cost(quantity: int, unit_price: int, delivery_fee: int):
     """
     if quantity == 0:
         return 0
-    return quantity * (unit_price + delivery_fee)
+    return quantity * unit_price + delivery_fee
 
 
 def coding_round_common_members(group_a: list, group_b: list):
