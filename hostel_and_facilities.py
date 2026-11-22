@@ -131,7 +131,7 @@ def numbered_laundry_labels(names: list):
     Example:
         numbered_laundry_labels(['alpha', 'beta']) -> ['1. alpha', '2. beta']
     """
-    return [f"{i}. {name}" for i, name in enumerate(names, start=0)]
+    return [f"{i}. {name}" for i, name in enumerate(names, start=1)]
 
 
 # ---------------------------------------------------------------------------
