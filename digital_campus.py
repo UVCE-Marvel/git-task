@@ -361,7 +361,9 @@ def total_upload_by_member(records: list):
     """
     totals = {}
     for name, amount in records:
-        totals[name] = amount
+        if name not in totals:
+            totals[name] = 0
+        totals[name] += amount
     return totals
 
 
