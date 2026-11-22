@@ -276,7 +276,7 @@ def biggest_hackathon_change(changes: list):
     """
     if not changes:
         return None
-    largest = 0
+    largest = changes[0]
     for change in changes:
         if change > largest:
             largest = change

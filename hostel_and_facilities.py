@@ -333,7 +333,7 @@ def merge_gate_entry_counts(first: dict, second: dict):
     """
     merged = dict(first)
     for key, count in second.items():
-        merged[key] = count
+         merged[key] = merged.get(key, 0) + count
     return merged
 
 
