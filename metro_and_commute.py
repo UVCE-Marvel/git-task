@@ -388,4 +388,4 @@ def bus_pass_initials(full_name: str):
         bus_pass_initials('ravi kumar') -> 'R.K'
     """
     words = full_name.split()
-    return ".".join(word[0].lower() for word in words)
+    return ".".join(word[0].upper() for word in words)
