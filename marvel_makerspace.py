@@ -29,7 +29,7 @@ def all_required_filament_present(required: list, available: list):
     Example:
         all_required_filament_present(['a', 'b'], ['a', 'b', 'c']) -> True
     """
-    return set(available).issubset(set(required))
+    return set(required).issubset(set(available))
 
 
 def filament_booking_results(requests: list):
