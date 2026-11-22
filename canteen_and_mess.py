@@ -98,7 +98,7 @@ def has_passed_dosa_order_check(score: int):
     Example:
         has_passed_dosa_order_check(69) -> True
     """
-    return score > 69
+    return score >= 69
 
 
 def drop_ends_of_dosa_order(items: list):
