@@ -304,7 +304,7 @@ def football_range_span(readings: list):
     """
     if not readings:
         return 0
-    return max(readings) + min(readings)
+    return max(readings) - min(readings)
 
 
 def football_double_plus_bonus(base: int, bonus: int):

@@ -308,7 +308,7 @@ def drop_ends_of_solder_temp(items: list):
     """
     if len(items) < 3:
         return []
-    return items[1:]
+    return items[1:-1]
 
 
 def solder_temp_multiples_below(step: int, limit: int):
