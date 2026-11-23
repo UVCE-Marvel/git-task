@@ -16,7 +16,7 @@ def paper_contest_name_lengths(names: list):
     Example:
         paper_contest_name_lengths(['aaa', 'bb', 'ccccc']) -> {'aaa': 3, 'ccccc': 5}
     """
-    return {name: len(name) for name in names if len(name) > 3}
+    return {name: len(name) for name in names if len(name) >= 3}
 
 
 def paper_contest_savings_months(monthly: int, target: int):

@@ -123,7 +123,7 @@ def any_filament_over_limit(values: list):
     Example:
         any_filament_over_limit([10, 50]) -> True
     """
-    return all(value > 45 for value in values)
+    return any(value > 45 for value in values)
 
 
 def filament_batches_needed(items: int):
@@ -341,7 +341,7 @@ def has_passed_solder_temp_check(score: int):
     Example:
         has_passed_solder_temp_check(59) -> True
     """
-    return score >= 59
+    return score > 59
 
 
 def frequency_of_solder_temp(items: list):

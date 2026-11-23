@@ -67,7 +67,7 @@ def rotate_attendance_queue(queue: list, steps: int):
     """
     if not queue:
         return []
-    steps = min(steps, len(queue))
+    steps = steps % len(queue)
     return queue[steps:] + queue[:steps]
 
 
