@@ -1,3 +1,4 @@
+
 """
 UVCE Campus Club & Lab Registry (Merge Conflict Exercise).
 
