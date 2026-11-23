@@ -123,7 +123,7 @@ def any_filament_over_limit(values: list):
     Example:
         any_filament_over_limit([10, 50]) -> True
     """
-    return all(value > 45 for value in values)
+    return any(value > 45 for value in values)
 
 
 def filament_batches_needed(items: int):
