@@ -113,7 +113,7 @@ def format_paper_contest_code(raw: str):
         format_paper_contest_code(' ab12 ') -> 'PPR-AB12'
     """
     cleaned = raw.strip()
-    cleaned.upper()
+    cleaned = cleaned.upper()
     return "PPR-" + cleaned
 
 

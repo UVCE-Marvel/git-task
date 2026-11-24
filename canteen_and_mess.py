@@ -121,7 +121,7 @@ def dosa_order_price_with_tax(amount: float, tax_percent: float = 15):
     Example:
         dosa_order_price_with_tax(100) -> 115.0
     """
-    return round(amount * (1 + tax_percent), 2)
+    return round(amount * (1 + tax_percent/100), 2)
 
 
 # ---------------------------------------------------------------------------
