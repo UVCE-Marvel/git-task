@@ -116,7 +116,7 @@ def metro_fare_remaining_budget(budget: int, spent_morning: int, spent_evening: 
     Example:
         metro_fare_remaining_budget(100, 30, 20) -> 50
     """
-    return budget - spent_morning + spent_evening
+    return budget - (spent_morning + spent_evening)
 
 
 def metro_fare_status_label(count: int):
