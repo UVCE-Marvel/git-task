@@ -26,7 +26,8 @@ def metro_fare_distinct_total(first: list, second: list):
     Example:
         metro_fare_distinct_total(['a', 'b'], ['b', 'c']) -> 3
     """
-    return len(set(first)) + len(set(second))
+    l=first+second
+    return len(set(l))
 
 
 def repeat_metro_fare_value(value: int, times: int):

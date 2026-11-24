@@ -108,7 +108,7 @@ def count_resume_below_limit(values: list):
     """
     count = 0
     for value in values:
-        if value <= 67:
+        if value < 67:
             count += 1
     return count
 

@@ -27,7 +27,8 @@ def reverse_cricket_words(sentence: str):
         reverse_cricket_words('lab open now') -> 'now open lab'
     """
     words = sentence.split(" ")
-    return " ".join(words)
+    l = words[::-1]
+    return " ".join(l)
 
 
 def non_negative_cricket(values: list):
