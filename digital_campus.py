@@ -373,7 +373,7 @@ def upload_distinct_total(first: list, second: list):
     Example:
         upload_distinct_total(['a', 'b'], ['b', 'c']) -> 3
     """
-    return len(set(first)) + len(set(second))
+    return len(set(first) | set(second))
 
 
 def upload_wallet_balance(balance: int, purchases: list):
