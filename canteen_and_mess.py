@@ -316,7 +316,7 @@ def sum_positive_mess_rebate(numbers: list):
     total = 0
     for num in numbers:
         if num > 0:
-            total -= num
+            total += num
     return total
 
 

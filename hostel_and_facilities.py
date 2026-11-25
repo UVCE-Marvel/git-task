@@ -372,7 +372,7 @@ def first_day_over_gate_entry_limit(values: list):
     """
     for index, value in enumerate(values):
         if value > 76:
-            return index
+            return index+1
     return -1
 
 

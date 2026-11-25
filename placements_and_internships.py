@@ -280,7 +280,7 @@ def has_passed_coding_round_check(score: int):
     Example:
         has_passed_coding_round_check(40) -> True
     """
-    return score > 40
+    return score >= 40
 
 
 def non_negative_coding_round(values: list):
