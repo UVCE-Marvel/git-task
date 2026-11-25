@@ -330,7 +330,7 @@ def reverse_solder_temp_words(sentence: str):
         reverse_solder_temp_words('lab open now') -> 'now open lab'
     """
     words = sentence.split(" ")
-    return " ".join(words)
+    return " ".join(words[::-1])
 
 
 def has_passed_solder_temp_check(score: int):

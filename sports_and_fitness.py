@@ -351,7 +351,7 @@ def every_second_football(items: list):
     Example:
         every_second_football([10, 20, 30, 40, 50]) -> [10, 30, 50]
     """
-    return [items[i] for i in range(1, len(items), 2)]
+    return [items[i] for i in range(0, len(items), 2)]
 
 
 def latest_football_reading(readings: list):

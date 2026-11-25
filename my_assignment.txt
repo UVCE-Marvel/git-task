@@ -1,0 +1,35 @@
+==========================================================================
+UVCE MARVEL GIT-TASK ASSIGNMENT FOR: @Punyasha777
+==========================================================================
+
+Part 1: Inspect Your 5 Assigned Scenario Functions
+--------------------------------------------------------------------------
+Open each file below at the listed line number. Every function has a
+short description and an `Example:` in its docstring.
+
+How to spot a bug:
+  Trace the function's code using the `Example:` input. If the code
+  produces a different answer from the `Example:`, fix the bug!
+
+#    File                             Line     Function Name
+--------------------------------------------------------------------------
+1    sports_and_fitness.py            L346     every_second_football()
+2    digital_campus.py                L368     upload_distinct_total()
+3    placements_and_internships.py    L296     frequency_of_coding_round()
+4    library_and_labs.py              L372     highest_journal_below_cap()
+5    marvel_makerspace.py             L324     reverse_solder_temp_words()
+
+Part 2: Resolve the Merge Conflict in campus_registry.py
+--------------------------------------------------------------------------
+After fixing the bugs in Part 1, merge the practice conflict branch:
+    git fetch upstream
+    git merge upstream/merge-conflict-practice
+    (or `git merge origin/merge-conflict-practice` if working on your fork)
+
+Open `campus_registry.py`, combine both branches as described in its
+docstring, and check your overall progress anytime by running:
+    python ci_check.py --user Punyasha777
+
+Note: Some of your 5 assigned functions may already work correctly --
+only edit a function if its code does not match its docstring/Example.
+==========================================================================
