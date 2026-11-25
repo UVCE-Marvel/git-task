@@ -369,7 +369,8 @@ def recent_grade_point_average(values: list, window: int = 3):
     Example:
         recent_grade_point_average([2, 4, 6, 8], 2) -> 7.0
     """
-    if not values or window == 0:
+    
+    if not values:
         return 0.0
     
     recent = values[-window:]
