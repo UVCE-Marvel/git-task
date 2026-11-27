@@ -145,7 +145,7 @@ def multiply_coding_contest_factors(factors: list):
     Example:
         multiply_coding_contest_factors([2, 3, 4]) -> 24
     """
-    product = 0
+    product = 1
     for factor in factors:
         product *= factor
     return product

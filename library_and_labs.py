@@ -247,7 +247,7 @@ def reference_copy_keys_above_limit(scores: dict):
     Example:
         reference_copy_keys_above_limit({'a': 45, 'b': 44, 'c': 50}) -> ['a', 'c']
     """
-    return sorted(k for k, v in scores.items() if v > 45)
+    return sorted(k for k, v in scores.items() if v >= 45)
 
 
 def larger_reference_copy_value(first: int, second: int):
