@@ -325,7 +325,8 @@ def football_name_lengths(names: list):
     Example:
         football_name_lengths(['aaaaa', 'bbbb', 'ccccccc']) -> {'aaaaa': 5, 'ccccccc': 7}
     """
-    return {name: len(name) for name in names if len(name) > 5}
+    return {name: len(name) for name in names if len(name) >=
+     5}
 
 
 def sum_positive_football(numbers: list):
