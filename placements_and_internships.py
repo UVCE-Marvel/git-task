@@ -339,7 +339,7 @@ def coding_round_price_with_tax(amount: float, tax_percent: float = 17):
     Example:
         coding_round_price_with_tax(100) -> 117.0
     """
-    return round(amount * (1 + tax_percent), 2)
+    return round(amount * (1 + tax_percent/100), 2)
 
 
 def coding_round_multiples_below(step: int, limit: int):

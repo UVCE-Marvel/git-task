@@ -274,7 +274,7 @@ def upload_remaining_budget(budget: int, spent_morning: int, spent_evening: int)
     Example:
         upload_remaining_budget(100, 30, 20) -> 50
     """
-    return budget - spent_morning + spent_evening
+    return budget - (spent_morning + spent_evening)
 
 
 def all_upload_within_limit(values: list):
